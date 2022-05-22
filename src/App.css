@@ -1,38 +1,383 @@
+/* 
+#cd0000 buttoms
+#707070 background
+#252323 sec background
+#dfdfdf text
+
+*/
+
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HOME PAGE START */
+
+.logo img {
+  height: 80px;
+  width: 150px;
+  margin-right: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-NavBarColor {
+  background-color: #252323;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchIcon {
+  color: #bbb;
+  margin-top: 8px;
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.signinBtn {
+  background-color: #252323 !important;
+  border-radius: 2%;
+}
+
+.signinBtn:hover {
+  background-color: #cd0000 !important;
+
+}
+
+.box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  margin-top: 95px;
+  background-color: #252323;
+}
+
+.infoBox {
+  flex: 1;
+  background-color: #707070;
+}
+
+.infoBox h1 {
+  color: #252323;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.infoBox h1 span {
+  margin-right: 20px;
+  margin-top: -5px;
+}
+
+.infoBox p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 150%;
+  margin: 20px;
+}
+
+.price {
+  color: white;
+  font-size: 22px !important;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+.box_img {
+  flex: 1.5;
+}
+
+.box_img img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.rating_icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #252323;
+}
+
+.btn_learnmore {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 120px;
+}
+
+/* use the important to override the bootstarp css */
+.btn-secondary {
+  display: flex;
+  align-self: start;
+  background-color: #252323 !important;
+  border-color: #252323 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #cd0000 !important;
+  border-color: #cd0000 !important;
+  transition: 1s !important;
+}
+
+.btnIcon {
+  font-size: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.backgroundSection {
+  max-width: 100%;
+  height: auto;
+  background-color: #707070;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.topgames_title h1 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* .owl-theme {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} */
+
+.owl-theme .item {
+  background-color: #707070;
+  margin: 10px;
+}
+
+.owl-item {
+  background-color: #707070;
+}
+
+.card_container {
+  height: auto;
+  width: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 0px 15px -10px #000000;
+  box-shadow: 2px 0px 15px -10px #000000;
+  margin-bottom: 20px;
+}
+
+.card_img img {
+  height: auto;
+  width: 360px;
+}
+
+.card_title h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.card_info p {
+  font-size: 14px;
+}
+
+.moreinfo_btn {
+  background-color: #252323 !important;
+  border: none !important;
+  border-radius: 2%;
+}
+
+.moreinfo_btn:hover {
+  border: none !important;
+}
+
+
+.logos img {
+  width: 220px;
+  height: 160px;
+  background-color: white;
+  margin: 20px;
+}
+
+
+#addreview_btn button {
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  height: 50px;
+  color: #252323;
+  background-color: #cd0000;
+  border: none;
+  box-shadow: #252323 0px 2px 0px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* footer */
+
+.upper_section {
+  background-color: #bbb;
+  height: 100px;
+}
+
+.upper_section .container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.upper_section .container a {
+  color: white;
+  text-decoration: none;
+}
+
+.second_section {
+  background-color: #252323;
+  height: 80px;
+}
+
+.second_section .container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.second_section .container a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+/* sign in page start */
+#signin_title {
+  position: absolute;
+  top: 18%;
+  left: 43%;
+  z-index: 1;
+  font-size: 50px;
+}
+
+.signin_background {
+  height: 713px;
+  max-width: 100%;
+  background: linear-gradient(180deg, rgba(131, 131, 131, 1) 35%, rgba(112, 112, 112, 1) 100%);
+}
+
+.signin_box .container {
+  margin-top: 15px;
+}
+
+.signin_box {
+  background-color: #dfdfdf;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 400px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.signin_box span {
+  color: red;
+}
+
+/* @media screen and (max-width: 650px) {
+  .signin_box {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    width: 350px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+} */
+
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#signin_btn {
+  background: linear-gradient(90deg, rgba(0, 198, 125, 1) 0%, rgba(4, 170, 109, 1) 100%);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 2%;
+  cursor: pointer;
+  width: 100%;
+}
+
+#signin_btn:hover {
+  opacity: 90%;
+}
+
+.welcomeUser{
+  color: #cd0000;
+  display: flex;
+  align-items: center;
+}
+
+#createaccount_btn {
+  background-color: #252323;
+  color: white;
+  padding: 8px 20px;
+  margin: 30px 0;
+  border: none;
+  border-radius: 2%;
+  width: 50%;
+}
+
+#createaccount_btn:hover {
+  background: linear-gradient(90deg, rgb(230, 14, 14) 20%, rgba(205, 0, 0, 1) 100%);
+}
+
+/* start game page */
+
+/* Columns */
+
+.full-section {
+  display: flex;
+  margin-top: 150px;
+}
+
+.left-column {
+  width: 50%;
+}
+
+.right-column {
+  width: 50%;
+}
+
+.left-column img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  /* transition: all 0.3s ease; */
+}
+
+.mySlides {
+  margin-left: 10px;
+}
+
+/* css of images gallery  */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.reviews {
+  height: 200px;
 }

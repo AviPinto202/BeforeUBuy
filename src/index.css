@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* important - set the color of the background on all screens */
+  background: #707070 !important;
 }
 
 code {
